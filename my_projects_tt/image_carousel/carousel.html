@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <main>
+        <ul class="slider">
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-blonde-kento_nanami-1008724.jpeg')"  data-index="0">
+                <div class="content">
+                    <h2 class="title">Kento Nanami</h2>
+                    <p class="description">Был студентом Токийской школы магии.
+                    Нанами покинул школу магии после окончания учебы,
+                    чтобы стать офисным работником,
+                    но вернулся четыре года спустя,
+                    чтобы продолжить работу в качестве мага.</p>
+                    <button id="kentoButton" data-index="0">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-yuji_itadori-935361.jpeg')"  data-index="1">
+                <div class="content">
+                    <h2 class="title">Yuji Itadori</h2>
+                    <p class="description">Один из главных персонажей Магической Битвы.
+                        Маг, студент первого года обучения в Столичной технической школе магии и сосуд для Сукуна..</p>
+                    <button id="yujiButton" data-index="1">Read More</button>
+                </div>
+            </li>
+                    <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-satoru_gojo-1509915.jpeg')"  data-index="2">
+                <div class="content">
+                    <h2 class="title">Satoru Gojo</h2>
+                    <p class="description">Один из главных персонажей Jujutsu Kaisen.
+                        Гордость Семьи Годжо, первый человек,
+                        унаследовавший и Безграничность и Шесть Глаз за четыреста лет.
+                        Он работает преподавателем в Токийской школе магии и
+                        использует свое влияние для защиты и обучения сильных молодых союзников..</p>
+                    <button id="gojoButton" data-index="2">Read More</button>
+                </div>
+            </li>
+                    <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')"  data-index="3">
+                <div class="content">
+                    <h2 class="title">Megumi Fushiguro</h2>
+                    <p class="description">Один из центральных персонажей Jujutsu Kaisen.
+                        Маг, студент первого года обучения в Столичной технической школе магии,
+                        а также потомок клана Зенин.</p>
+                    <button id="megumiButton" data-index="3">Read More</button>
+                </div>
+            </li>
+                    <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-pink_hair-red_eyes-sukuna_jujutsu_kaisen-1023109.jpeg')"  data-index="4">
+                <div class="content">
+                    <h2 class="title">Ryomen Sukuna</h2>
+                    <p class="description">Сильнейший маг тысячелетней давности.
+                        Считаясь бесспорным Королём Проклятий (呪のろいの王おう Noroi no Ō?),
+                        Сукуна один из главных антагонистов Jujutsu Kaisen. Согласно легенде,
+                        во времена расцвета колдовства 1000 лет назад Сукуна был проклятием
+                        в человеческом обличье .</p>
+                    <button id="sukunaButton" data-index="4">Read More</button>
+                </div>
+            </li>
+        </ul>
+        <nav class="nav">
+            <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+            <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+        </nav>
+        <div class="area"></div><nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="https://jbfarrow.com">
+                        <i class="fa fa-home fa-2x"></i>
+                        <span class="nav-text">
+                           Community Dashboard
+                        </span>
+                    </a>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                        <i class="fa fa-globe fa-2x"></i>
+                        <span class="nav-text">
+                            Global Surveyors
+                        </span>
+                    </a>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-comments fa-2x"></i>
+                        <span class="nav-text">
+                            Group Hub Forums
+                        </span>
+                    </a>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="#">
+                       <i class="fa fa-camera-retro fa-2x"></i>
+                        <span class="nav-text">
+                            Survey Photos
+                        </span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-film fa-2x"></i>
+                        <span class="nav-text">
+                            Surveying Tutorials
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-book fa-2x"></i>
+                        <span class="nav-text">
+                           Surveying Jobs
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                       <i class="fa fa-cogs fa-2x"></i>
+                        <span class="nav-text">
+                            Tools & Resources
+                        </span>
+                    </a>
+                </li>
+                <li>
+                   <a href="#">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="nav-text">
+                            Member Map
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                       <i class="fa fa-info fa-2x"></i>
+                        <span class="nav-text">
+                            Documentation
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="logout">
+                <li>
+                   <a href="#">
+                         <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-text">
+                            Logout
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="carousel.js"></script>
+    <script src="button-event.js"></script>
+</body>
+</html>
