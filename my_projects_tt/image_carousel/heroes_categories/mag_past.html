@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="../style_carousel/carousel_past.css">
+</head>
+<body>
+    <main>
+        <ul class="slider">
+            <li class="item active" style="background-image:url('../images/carousel/mag_past/anime-jujutsu_kaisen-pink_hair-red_eyes-sukuna_jujutsu_kaisen-1023109.jpeg')"  data-index="4">
+                <div class="content">
+                    <h2 class="title">Ryomen Sukuna</h2>
+                    <p class="description">Сильнейший маг тысячелетней давности.
+                        Считаясь бесспорным Королём Проклятий (呪のろいの王おう Noroi no Ō?),
+                        Сукуна один из главных антагонистов Jujutsu Kaisen. Согласно легенде,
+                        во времена расцвета колдовства 1000 лет назад Сукуна был проклятием
+                        в человеческом обличье .</p>
+                    <button id="sukunaButton">Read More</button>
+                </div>
+            </li>
+            <li class="item inactive" style="background-image:url('../images/carousel/mag_past/imgonline-com-ua-convertZ6SjApe1LkFH.jpg')">
+                <div class="content">
+                    <h2 class="title">Tengen</h2>
+                    <p class="description">Тенген (天てん元げん Tengen?), также известный как Мастер Тенген
+                        (天てん元げん様さま Tengen-sama?), — бессмертный маг, который всегда остается в своей
+                        камере, коридоре Звёздной Гробницы,
+                        чтобы укреплять барьеры, защищающие обе локации школы Jujutsu.</p>
+                    <button id="tengenButton">Read More</button>
+                </div>
+            </li>
+        </ul>
+        <nav class="nav">
+            <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+            <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+        </nav>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js_codes/carousel_past.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const sukunaButton = document.getElementById('sukunaButton');
+
+        function openDescription(url) {
+            window.open(url, 'sameWindowName');
+        }
+
+        sukunaButton.addEventListener('click', function () {
+            openDescription('../../heroes_bio/html/mag_past/sukuna_description.html');
+        });
+
+        tengenButton.addEventListener('click', function () {
+            openDescription('../../heroes_bio/html/mag_past/tengen_description.html');
+        });
+    });
+    </script>
+</body>
+
+</html>
