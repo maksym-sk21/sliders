@@ -1,5 +1,5 @@
 const slider = document.querySelector('.slider');
-const dots = document.querySelectorAll('.dot'); // Добавлено получение точек
+const dots = document.querySelectorAll('.dot');
 
 function activate(e) {
     const items = document.querySelectorAll('.item');
@@ -19,7 +19,6 @@ function activate(e) {
 function updateDots(newIndex) {
     const totalDots = dots.length;
 
-    // Обработка кругового переключения
     if (newIndex < 0) {
         newIndex = totalDots - 1;
     } else if (newIndex >= totalDots) {
