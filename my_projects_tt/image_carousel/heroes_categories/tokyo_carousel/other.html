@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="../../style_carousel/carousel.css">
+    <link rel="stylesheet" href="../../side_bar/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../../side_bar/sidebar.css">
+</head>
+<body>
+    <main>
+        <div class = "list-group">
+        <nav class="main-menu">
+        <ul>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-home zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Home
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-accounts-alt zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Accounts
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-mail-send zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Send Mail
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" ><i class = "zmdi zmdi-collection-bookmark zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Collection
+                    </span>
+                </a>
+            </li>
+        </ul>
+        </nav>
+    </div>
+        <ul class="slider">
+            <li class="item" style="background-image:url('')">
+                <div class="content">
+                    <h2 class="title">Kento Nanami</h2>
+                    <p class="description">Был студентом Токийской школы магии.
+                    Нанами покинул школу магии после окончания учебы,
+                    чтобы стать офисным работником,
+                    но вернулся четыре года спустя,
+                    чтобы продолжить работу в качестве мага.</p>
+                    <button id="kentoButton" data-index="0">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('')">
+                <div class="content">
+                    <h2 class="title">Yuji Itadori</h2>
+                    <p class="description">Один из главных персонажей Магической Битвы.
+                        Маг, студент первого года обучения в Столичной технической школе магии и сосуд для Сукуна..</p>
+                    <button id="yujiButton" data-index="1">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('')">
+                <div class="content">
+                    <h2 class="title">Satoru Gojo</h2>
+                    <p class="description">Один из главных персонажей Jujutsu Kaisen.
+                        Гордость Семьи Годжо, первый человек,
+                        унаследовавший и Безграничность и Шесть Глаз за четыреста лет.
+                        Он работает преподавателем в Токийской школе магии и
+                        использует свое влияние для защиты и обучения сильных молодых союзников..</p>
+                    <button id="gojoButton" data-index="2">Read More</button>
+                </div>
+            </li>
+        </ul>
+        <nav class="nav">
+            <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+            <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+        </nav>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../../js_codes/carousel.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+                const kentoButton = document.getElementById('kentoButton');
+                const yujiButton = document.getElementById('yujiButton');
+                const gojoButton = document.getElementById('gojoButton');
+                const megumiButton = document.getElementById('megumiButton');
+                const sukunaButton = document.getElementById('sukunaButton');
+
+                function openDescription(url) {
+                    window.open(url, 'sameWindowName');
+                }
+
+                kentoButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/nanami_description.html');
+                });
+
+                yujiButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/yuji_description.html');
+                });
+
+                gojoButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/gojo_description.html');
+                });
+
+                megumiButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/megumi_description.html');
+                });
+            });
+    </script>
+</body>
+</html>

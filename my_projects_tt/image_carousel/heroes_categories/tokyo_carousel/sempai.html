@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="../../style_carousel/carousel.css">
+    <link rel="stylesheet" href="../../side_bar/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../../side_bar/sidebar.css">
+</head>
+<body>
+    <main>
+        <div class = "list-group">
+        <nav class="main-menu">
+        <ul>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-home zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Home
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-accounts-alt zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Accounts
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-mail-send zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Send Mail
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" ><i class = "zmdi zmdi-collection-bookmark zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Collection
+                    </span>
+                </a>
+            </li>
+        </ul>
+        </nav>
+    </div>
+        <ul class="slider">
+            <li class="item" style="background-image:url('')">
+                <div class="content">
+                    <h2 class="title">Yaga Masamichi</h2>
+                    <p class="description">Яга Масамичи (夜蛾正道やがまさみち Yaga Masamichi?) — персонаж приквела и
+                        основной серии Магической битвы (Jujutsu Kaisen).
+                        Маг, директор Столичной технической школы магии, создатель Панды и бывший учитель Годжо Сатору,
+                        Гето Сугуру, Иэйри Сёко.</p>
+                    <button id="yagaButton" data-index="0">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('../../images/carousel/tokyo_school/anime-jujutsu_kaisen-satoru_gojo-1509915.jpeg')">
+                <div class="content">
+                    <h2 class="title">Gojō Satoru</h2>
+                    <p class="description">Сатору Годжо (五ご条じょう悟さとる Gojō Satoru?) — один из главных персонажей
+                        Jujutsu Kaisen. Гордость Семьи Годжо, первый человек, унаследовавший и Безграничность и
+                        Шесть Глаз за четыреста лет.</p>
+                    <button id="gojoButton" data-index="0">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('')">
+                <div class="content">
+                    <h2 class="title">Kusakabe Atsuya</h2>
+                    <p class="description">Ацуя Кусакабэ (日くさ下か部べ篤あつ也や Kusakabe Atsuya?) — маг первого уровня и
+                        учитель второго курса в Токийской Технической Школе Магии.</p>
+                    <button id="kusakabeButton" data-index="0">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('../../images/carousel/tokyo_school/anime-jujutsu_kaisen-blonde-kento_nanami-1008724.jpeg')">
+                <div class="content">
+                    <h2 class="title">Kento Nanami</h2>
+                    <p class="description">Был студентом Токийской школы магии.
+                    Нанами покинул школу магии после окончания учебы,
+                    чтобы стать офисным работником,
+                    но вернулся четыре года спустя,
+                    чтобы продолжить работу в качестве мага.</p>
+                    <button id="kentoButton" data-index="0">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('/')">
+                <div class="content">
+                    <h2 class="title">Ieiri Shōko</h2>
+                    <p class="description">Сёко Иэйри (家いえ入いり硝しょう子こ Ieiri Shōko?) — персонаж Jujutsu Kaisen.
+                        Маг, в прошлом обучалась в одном классе с Сатору Годжо и Сугуру Гето
+                        под руководством Яги Масамити. В настоящее время работает доктором в Токийском подразделении.</p>
+                    <button id="ieiriButton" data-index="0">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('')">
+                <div class="content">
+                    <h2 class="title">Ijichi Kiyotaka</h2>
+                    <p class="description">Киётака Идзити (伊い地じ知ち潔きよ高たか Ijichi Kiyotaka?) — второстепенный
+                        персонаж Jujutsu Kaisen. Маг, обучался в Токийской столичной технической школе магии и сейчас
+                        работает там же ассистентом директора.</p>
+                    <button id="ijichiButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('')">
+                <div class="content">
+                    <h2 class="title">Ino Takuma</h2>
+                    <p class="description">Такума Ино (猪野琢真猪野琢真 Ino Takuma?) — маг второго уровня и близкий друг
+                        Кэнто Нанами. Работает в Магической школе.</p>
+                    <button id="inoButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('')">
+                <div class="content">
+                    <h2 class="title">Mei Mei</h2>
+                    <p class="description">Мэй Мэй (冥めい冥めい Mei Mei?) — маг первого уровня, которая работает сама на
+                        себя и только за деньги. Она также является старшей сестрой Юи Юи и была сэмпаем Сатору Годжо и
+                        Сугуру Гето во время их обучения в магической школе.</p>
+                    <button id="meiButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('../../images/carousel/mag_past/imgonline-com-ua-convertZ6SjApe1LkFH.jpg')">
+                <div class="content">
+                    <h2 class="title">Tengen</h2>
+                    <p class="description">Тенген (天てん元げん Tengen?), также известный как Мастер Тенген
+                        (天てん元げん様さま Tengen-sama?), — бессмертный маг, который всегда остается в своей
+                        камере, коридоре Звёздной Гробницы,
+                        чтобы укреплять барьеры, защищающие обе локации школы Jujutsu.</p>
+                    <button id="tengenButton">Read More</button>
+                </div>
+            </li>
+        </ul>
+        <nav class="nav">
+            <div class="dots-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+            <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+        </nav>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../../js_codes/carousel.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+                const yagaButton = document.getElementById('yagaButton');
+                const gojoButton = document.getElementById('gojoButton');
+                const kusakabeButton = document.getElementById('kusakabeButton');
+                const ieiriButton = document.getElementById('ieiriButton');
+                const kentoButton = document.getElementById('kentoButton');
+                const ijichiButton = document.getElementById('ijichiButton');
+                const inoButton = document.getElementById('inoButton');
+                const meiButton = document.getElementById('meiButton');
+                const tengenButton = document.getElementById('tengenButton');
+
+                function openDescription(url) {
+                    window.open(url, 'sameWindowName');
+                }
+
+                kentoButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/sempai/nanami_description.html');
+                });
+
+                meiButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/sempai/mei_description.html');
+                });
+
+                inoButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/sempai/ino_description.html');
+                });
+
+                ijichiButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/sempai/ijichi_description.html');
+                });
+
+                ieiriButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/sempai/ieiri_description.html');
+                });
+
+                yagaButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/sempai/yaga_description.html');
+                });
+
+                gojoButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/sempai/gojo_description.html');
+                });
+
+                kusakabeButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/sempai/kusakabe_description.html');
+                });
+
+                tengenButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/sempai/tengen_description.html');
+                });
+            });
+    </script>
+</body>
+</html>
