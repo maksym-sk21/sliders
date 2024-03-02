@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="../../style_carousel/carousel.css">
+    <link rel="stylesheet" href="../../side_bar/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../../side_bar/sidebar.css">
+</head>
+<body>
+    <main>
+        <div class = "list-group">
+        <nav class="main-menu">
+        <ul>
+            <li>
+                <a class = "list-group-item" href = "../../main_screen/slide.html" >
+                    <i class = "zmdi zmdi-home zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Главная
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-accounts-alt zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Персонажи
+                    </span>
+                </a>
+                <ul>
+                    <li><a href="../kyoto_school.html">Киотская школа</a></li>
+                    <li><a href="../tokyo_school.html">Токийская школа</a></li>
+                    <li><a href="../zenin.html">Семья Зенин</a></li>
+                    <li><a href="../kamo.html">Семья Камо</a></li>
+                    <li><a href="../itadori_family.html">Семья Итадори</a></li>
+                    <li><a href="../cult_geto.html">Культ Гето</a></li>
+                    <li><a href="../cult_kenjaku.html">Культ Кендзяку</a></li>
+                    <li><a href="../dead_game.html">Игроки Смертельной Миграции</a></li>
+                    <li><a href="../curses.html">Проклятья</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-account-box-mail zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Контакты
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-collection-bookmark zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Collection
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-library zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Библиотека
+                    </span>
+                </a>
+                <ul>
+                    <li><a href="#">Проклятые техники</a></li>
+                    <li><a href="#">Проклятые предметы</a></li>
+                    <li><a href="#">Сюжетные арки</a></li>
+                    <li><a href="#">Терминология</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+    </div>
+        <ul class="slider">
+            <li class="item" style="background-image:url('../../images/carousel/tokyo_school/anime-jujutsu_kaisen-nobara_kugisaki-1020238.jpeg')">
+                <div class="content">
+                    <h2 class="title">Kugisaki Nobara</h2>
+                    <p class="description">Нобара Кугисаки (釘くぎ崎さき野の薔ば薇ら Kugisaki Nobara?) —
+                        одна из главных персонажей Jujutsu Kaisen. Маг, ученица первого года обучения в
+                        Токийской столичной технической школе магии.</p>
+                    <button id="nobaraButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('../../images/carousel/tokyo_school/anime-jujutsu_kaisen-yuji_itadori-935361.jpeg')">
+                <div class="content">
+                    <h2 class="title">Yuji Itadori</h2>
+                    <p class="description">Один из главных персонажей Магической Битвы.
+                        Маг, студент первого года обучения в Столичной технической школе магии и сосуд для Сукуна..</p>
+                    <button id="yujiButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('../../images/carousel/tokyo_school/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+                <div class="content">
+                    <h2 class="title">Megumi Fushiguro</h2>
+                    <p class="description">Один из центральных персонажей Jujutsu Kaisen.
+                        Маг, студент первого года обучения в Столичной технической школе магии,
+                        а также потомок клана Зенин.</p>
+                    <button id="megumiButton">Read More</button>
+                </div>
+            </li>
+
+        </ul>
+        <nav class="nav">
+            <div class="dots-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+            <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+            <button id="backButton">Back</button>
+        </nav>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../../js_codes/carousel.js"></script>
+    <script src='../../js_codes/action_back.js'></script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+                const yujiButton = document.getElementById('yujiButton');
+                const megumiButton = document.getElementById('megumiButton');
+                const nobaraButton = document.getElementById('nobaraButton');
+
+                function openDescription(url) {
+                    window.open(url, 'sameWindowName');
+                }
+
+                yujiButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/first_course/yuji_description.html');
+                });
+
+                nobaraButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/first_course/nobara_description.html');
+                });
+
+                megumiButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/first_course/megumi_description.html');
+                });
+            });
+    </script>
+</body>
+</html>
