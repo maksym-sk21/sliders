@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="../style_carousel/carousel.css">
+    <link rel="stylesheet" href="../side_bar/css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="../side_bar/sidebar.css">
+</head>
+<body>
+    <main>
+        <div class="list-group">
+        <nav class="main-menu">
+        <ul>
+            <li>
+                <a class = "list-group-item" href = "../main_screen/slide.html" >
+                    <i class = "zmdi zmdi-home zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Главная
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-accounts-alt zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Персонажи
+                    </span>
+                </a>
+                <ul>
+                    <li><a href="../heroes_categories/kyoto_school.html">Киотская школа</a></li>
+                    <li><a href="../heroes_categories/tokyo_school.html">Токийская школа</a></li>
+                    <li><a href="../heroes_categories/zenin.html">Семья Зенин</a></li>
+                    <li><a href="../heroes_categories/kamo.html">Семья Камо</a></li>
+                    <li><a href="../heroes_categories/itadori_family.html">Семья Итадори</a></li>
+                    <li><a href="../heroes_categories/cult_geto.html">Культ Гето</a></li>
+                    <li><a href="../heroes_categories/cult_kenjaku.html">Куль Кендзяку</a></li>
+                    <li><a href="../heroes_categories/dead_game.html">Игроки Смертельной Миграции</a></li>
+                    <li><a href="../heroes_categories/curses.html">Проклятья</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-account-box-mail zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Контакты
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-collection-bookmark zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Collection
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-library zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Библиотека
+                    </span>
+                </a>
+                <ul>
+                    <li><a href="#">Проклятые техники</a></li>
+                    <li><a href="#">Проклятые предметы</a></li>
+                    <li><a href="#">Сюжетные арки</a></li>
+                    <li><a href="#">Терминология</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+    </div>
+        <ul class="slider">
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-blonde-kento_nanami-1008724.jpeg')">
+                <div class="content">
+                    <h2 class="title">Kashimo Hajime</h2>
+                    <p class="description">Хадзиме Касимо (鹿紫雲かしも一はじめ Kashimo Hajime?) известный как Бог Молнии (Райдзин?)
+                        ,[3] — антагонист, ставший второстепенным персонажем в серии «Дзюдзюцу Кайсен». Он колдун,
+                        живший 400 лет назад, в настоящее время населяющий тело человека, которого Кенджаку подготовил
+                        как сосуд, и который участвовал в
+                        Отборной игре Кенджаку, стремясь найти Сукуну и, следовательно, сразиться с ним.[4][5]</p>
+                    <button id="halimeButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-yuji_itadori-935361.jpeg')"  data-index="1">
+                <div class="content">
+                    <h2 class="title">Kurusu Hana</h2>
+                    <p class="description">Хана Курусу (来くる栖す華はな Kurusu Hana?) — персонаж игры «Дзюдзюцу Кайсен».
+                        Она волшебница, которая разделяет свое тело в симбиозе с Ангелом, воплощенным волшебником из эпохи Хэйан, и, таким образом, владеет дзю-дзюцу последнего. Хана участвовала в Игре Отбора,
+                        чтобы Ангел мог выследить и убить других воплощенных игроков, включая Опозоренного Сукуну.[1][2]</p>
+                    <button id=hanaButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-satoru_gojo-1509915.jpeg')">
+                <div class="content">
+                    <h2 class="title">Higuruma Hiromi</h2>
+                    <p class="description">Хироми Хигурума (日ひ車ぐるま寛ひろ見み Higuruma Hiromi?) — персонаж серии
+                        «Дзюдзюцу Кайсен». Он адвокат, который часто брал на себя невероятно сложные дела, чтобы защитить
+                        неправомерно обвиняемых. Полностью отказавшись от системы правосудия, Хироми в настоящее время
+                        участвует в Игре Отбраковки как один из лучших игроков. Первоначально он выступает в качестве антагониста арки
+                        «Игра Отбора», прежде чем изменение взглядов заставляет его сотрудничать с Юджи Итадори.</p>
+                    <button id="hiromiButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+                <div class="content">
+                    <h2 class="title">Takaba Fumihiko</h2>
+                    <p class="description">Фумихико Такаба (髙たか羽ば史ふみ彦ひこ Takaba Fumihiko?) — серия дзюдзюцу кайсен. Он
+                        неудачливый комик, который был одним из многих нормальных людей,
+                        которых Кенджаку превратил в колдуна, чтобы участвовать в Игре Отбраковки.</p>
+                    <button id="fumihikoButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+                <div class="content">
+                    <h2 class="title">Amai Rin</h2>
+                    <p class="description">Рин Амай (甘あま井い凛りん Amai Rin?) — персонаж серии «Дзюдзюцу Кайсен». Он был
+                        гражданином города Сендай, пока Кенджаку
+                        невольно превратил его в колдуна и не заставил участвовать в Игре Отбраковки.</p>
+                    <button id="rinButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+                <div class="content">
+                    <h2 class="title">Hanyu</h2>
+                    <p class="description">Ханю (羽は生にゅう Hanyū?) — второстепенный антагонист серии «Дзюдзюцу Кайсен».
+                        Она и ее партнер Хаба - игроки в «Отбраковку»,
+                        которые преследовали новичков Токийской колонии № 1, пока они оба не были побеждены Юджи Итадори.</p>
+                    <button id="hanyuButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+                <div class="content">
+                    <h2 class="title">Haba</h2>
+                    <p class="description">Хаба (羽場はば Haba?) — второстепенный антагонист серии «Дзюдзюцу Кайсен».
+                        Он и его партнер Ханю были игроками в «Отбраковку»,
+                        которые преследовали новичков Токийской колонии № 1, пока они оба не были побеждены Юдзи Итадори.</p>
+                    <button id="habaButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+                <div class="content">
+                    <h2 class="title">Yorozu</h2>
+                    <p class="description">Ёродзу (万よろず Yorozu?) — персонаж серии «Дзюдзюцу Кайсен». Она была волшебницей
+                        дзюдзюцу из Айдзу в эпоху Хэйан, признанной кланом Фудзивара и
+                        одержимой Сукуной. Она была воплощена в теле Цумики Фусигуро для Игры Отбора.</p>
+                    <button id="yorozuButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+                <div class="content">
+                    <h2 class="title">Rejii Sutā</h2>
+                    <p class="description">Реджи Стар (レジィ・スター Rejii Sutā?) — персонаж серии «Дзюдзюцу Кайсен».
+                        Он волшебник дзю-дзюцу из прошлого, который воплотился для участия в Игре Отбраковки.
+                        Реджи возглавил свою собственную группу колдунов и был антагонистом арки Игры Отбора.</p>
+                    <button id="reggieButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-blonde-kento_nanami-1008724.jpeg')">
+                <div class="content">
+                    <h2 class="title">Remi</h2>
+                    <p class="description">Реми (麗美れみ Remi?) — персонаж серии «Дзюдзюцу Кайсен». Она была обычным
+                        человеком, ставшим волшебницей дзю-дзюцу Кенджаку для Игры Отбора. Реми присоединилась
+                        к группе Реджи Стар, которые являются антагонистами арки Игры Отбора.</p>
+                    <button id="remiButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-yuji_itadori-935361.jpeg')"  data-index="1">
+                <div class="content">
+                    <h2 class="title">Hazenoki Iori</h2>
+                    <p class="description">Иори Хазеноки (黄櫨はぜのき折いおり Hazenoki Iori?) — персонаж серии «Дзюдзюцу Кайсен».
+                        Он колдун дзю-дзюцу из прошлого, которого воплотил Кенджаку для Игры Отбора.
+                        Хазеноки присоединился к группе Реджи Стара, которые являются антагонистами арки Игры Отбора.</p>
+                    <button id="hazenokiButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-satoru_gojo-1509915.jpeg')">
+                <div class="content">
+                    <h2 class="title">Hari Chizuru</h2>
+                    <p class="description">Чизуру Хари (針はり千ち釣づる Hari Chizuru?)  — персонаж серии «Дзю-дзюцу Кайсен»,
+                        колдун дзю-дзюцу, участвовавший в Игре Отбора и принадлежавший к группе Реджи Стара.</p>
+                    <button id="chizuruButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+                <div class="content">
+                    <h2 class="title">Dhruv Lakdawalla</h2>
+                    <p class="description">Дхрув Лакдавалла (ドルゥヴ・ラクダワラ Dorūbu Rakudawara?) — персонаж сериала
+                        «Дзюдзюцу Кайсен». Он колдун дзю-дзюцу из прошлого, которого воплотил Кенджаку для Игры Отбора.
+                        Это второе воплощение колдуна-ветерана,
+                        который однажды в одиночку завоевал Японию во время Гражданской войны в Ва.[1]</p>
+                    <button id="dhruvButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+                <div class="content">
+                    <h2 class="title">Ishigōri Ryū</h2>
+                    <p class="description">Рю Исигори (石いし流ごおり龍りゅう Ishigōri Ryū?) — персонаж серии «Дзюдзюцу Кайсен».
+                        Он колдун дзю-дзюцу, живший 400 лет назад, который был
+                        воплощен в современную эпоху Кенджаку для участия в Игре Отбраковки в качестве игрока.</p>
+                    <button id="ryuButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+                <div class="content">
+                    <h2 class="title">Uro Takako</h2>
+                    <p class="description">Такако Уро (烏う鷺ろ 亨たか子こ Uro Takako?) — персонаж серии «Дзюдзюцу Кайсен».
+                        Она волшебница дзю-дзюцу тысячелетней давности, воплощенная Кенджаку для Игры Отбора. В своей
+                        первой жизни Такако Уро
+                        была капитаном Отряда Солнца, Луны и Звезд, группы убийц, связанных с семьей Фудзивара.</p>
+                    <button id="takakoButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+                <div class="content">
+                    <h2 class="title">Charles Bernard</h2>
+                    <p class="description">Чарльз Бернард (シャルル・ベルナール Sharuru Berunāru?) — персонаж серии
+                        «Дзюдзюцу Кайсен». Он амбициозный мангака,
+                        который агрессивно преследовал свои цели, пока его не заставили участвовать в Игре Отбраковки.</p>
+                    <button id="charlesButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+                <div class="content">
+                    <h2 class="title">Daido Hagane</h2>
+                    <p class="description">Хагане Дайдо (大だい道どう鋼はがね Daidō Hagane?) — персонаж серии «Дзю-дзюцу Кайсен», воплощение безымянного
+                        мастера-фехтовальщика и в настоящее время участвует в Игре Отбраковки.</p>
+                    <button id="haganeButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+                <div class="content">
+                    <h2 class="title">Miyo Rokujūshi</h2>
+                    <p class="description">Рокудзюси Миё (三代みよ六ろく十じゅう四し Miyo Rokujūshi?) — персонаж серии «Дзюдзюцу Кайсен»,
+                        воплощение энтузиаста сумо и в настоящее время участвует в «Игре отбора».</p>
+                    <button id="miyaButton">Read More</button>
+                </div>
+            </li>
+        </ul>
+        <nav class="nav">
+            <div class="dots-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+            <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+        </nav>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js_codes/carousel.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+                const halimeButton = document.getElementById('halimeButton');
+                const hanaButton = document.getElementById('hanaButton');
+                const hiromiButton = document.getElementById('hiromiButton');
+                const fumihikoButton = document.getElementById('fumihikoButton');
+                const rinButton = document.getElementById('rinButton');
+                const hanyuButton = document.getElementById('hanyuButton');
+                const habaButton = document.getElementById('habaButton');
+                const yorozuButton = document.getElementById('yorozuButton');
+                const reggieButton = document.getElementById('reggieButton');
+                const remiButton = document.getElementById('remiButton');
+                const hazenokiButton = document.getElementById('hazenokiButton');
+                const chizuruButton = document.getElementById('chizuruButton');
+                const dhruvButton = document.getElementById('dhruvButton');
+                const ryuButton = document.getElementById('ryuButton');
+                const takakoButton = document.getElementById('takakoButton');
+                const charlesButton = document.getElementById('charlesButton');
+                const haganeButton = document.getElementById('haganeButton');
+                const miyaButton = document.getElementById('miyaButton');
+
+                function openDescription(url) {
+                    window.open(url, 'sameWindowName');
+                }
+
+                halimeButton.addEventListener('click', function () {
+                    openDescription('hajime_description.html');
+                });
+
+                hanaButton.addEventListener('click', function () {
+                    openDescription('hana_description.html');
+                });
+
+                hiromiButton.addEventListener('click', function () {
+                    openDescription('hiromi_description.html');
+                });
+
+                fumihikoButton.addEventListener('click', function () {
+                    openDescription('fumihiko_description.html');
+                });
+
+                rinButton.addEventListener('click', function () {
+                    openDescription('rin_description.html');
+
+                hanyuButton.addEventListener('click', function () {
+                    openDescription('hanyu_description.html');
+
+                habaButton.addEventListener('click', function () {
+                    openDescription('haba_description.html');
+
+                yorozuButton.addEventListener('click', function () {
+                    openDescription('yorozu_description.html');
+
+                reggieButton.addEventListener('click', function () {
+                    openDescription('reggie_description.html');
+
+                remiButton.addEventListener('click', function () {
+                    openDescription('remi_description.html');
+                });
+
+                hazenokiButton.addEventListener('click', function () {
+                    openDescription('hazenoki_description.html');
+                });
+
+                chizuruButton.addEventListener('click', function () {
+                    openDescription('chizuru_description.html');
+                });
+
+                dhruvButton.addEventListener('click', function () {
+                    openDescription('dhruv_description.html');
+                });
+
+                ryuButton.addEventListener('click', function () {
+                    openDescription('ryu_description.html');
+
+                takakoButton.addEventListener('click', function () {
+                    openDescription('takako_description.html');
+
+                charlesButton.addEventListener('click', function () {
+                    openDescription('charles_description.html');
+
+                haganeButton.addEventListener('click', function () {
+                    openDescription('hagane_description.html');
+
+                miyaButton.addEventListener('click', function () {
+                    openDescription('miya_description.html');
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="../style_carousel/carousel.css">
+    <link rel="stylesheet" href="../side_bar/css/material-design-iconic-font.css">
+    <link rel="stylesheet" href="../side_bar/sidebar.css">
+</head>
+<body>
+    <main>
+        <div class="list-group">
+        <nav class="main-menu">
+        <ul>
+            <li>
+                <a class = "list-group-item" href = "../main_screen/slide.html" >
+                    <i class = "zmdi zmdi-home zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Главная
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-accounts-alt zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Персонажи
+                    </span>
+                </a>
+                <ul>
+                    <li><a href="../heroes_categories/kyoto_school.html">Киотская школа</a></li>
+                    <li><a href="../heroes_categories/tokyo_school.html">Токийская школа</a></li>
+                    <li><a href="../heroes_categories/zenin.html">Семья Зенин</a></li>
+                    <li><a href="../heroes_categories/kamo.html">Семья Камо</a></li>
+                    <li><a href="../heroes_categories/itadori_family.html">Семья Итадори</a></li>
+                    <li><a href="../heroes_categories/cult_geto.html">Культ Гето</a></li>
+                    <li><a href="../heroes_categories/cult_kenjaku.html">Куль Кендзяку</a></li>
+                    <li><a href="../heroes_categories/dead_game.html">Игроки Смертельной Миграции</a></li>
+                    <li><a href="../heroes_categories/curses.html">Проклятья</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-account-box-mail zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Контакты
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-collection-bookmark zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Collection
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-library zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Библиотека
+                    </span>
+                </a>
+                <ul>
+                    <li><a href="#">Проклятые техники</a></li>
+                    <li><a href="#">Проклятые предметы</a></li>
+                    <li><a href="#">Сюжетные арки</a></li>
+                    <li><a href="#">Терминология</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+    </div>
+        <ul class="slider">
+            <li class="item" style="background-image:url('../images/cult_geto/Манами Суда 1.jpg')">
+                <div class="content">
+                    <h2 class="title">Manami Suda</h2>
+                    <p class="description">Манами Суда (菅田すだ真奈美まなみ Manami Suda?)[1] — персонаж Jujutsu Kaisen
+                        и в его приквеле Jujutsu Kaisen 0: Jujutsu High. Она использует
+                        проклятия, раньше была секретарем Сугуру Гето, а также командиром его «семьи» колдунов. После смерти Сугуру Манами и Тошихиса
+                        Неги решили выполнить его волю, присоединившись к сущности, которая украла его тело.</p>
+                    <button id="sudaButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('../images/cult_geto/geto2.jpg')">
+                <div class="content">
+                    <h2 class="title">Getō Suguru</h2>
+                    <p class="description">Сугуру Гето (夏げ油とう傑すぐる Getō Suguru?) — антагонист в приквеле Магическая Битва 0, и лже-антагонист в основной серии Магической Битвы.
+                        Изначально он был одноклассником Сатору Годжо и Сёко Иэйри и учеником Яги Масамичи.</p>
+                    <button id="getoButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('../images/cult_geto/Лару-1.jpg')">
+                <div class="content">
+                    <h2 class="title">Laruu</h2>
+                    <p class="description">Лару (ラルゥ Laruu?) — персонаж Jujutsu Kaisen и его приквела
+                        Jujutsu Kaisen 0: Jujutsu High. Он был пользователем проклятий и одним из командиров
+                        Сугуру Гето. Как и Мигель, Лару хотел только, чтобы Сугуру стал королем, и после своей смерти
+                        отказался
+                        от других пользователей проклятий. С тех пор Ларуэ стала союзницей Юки Цукумо.</p>
+                    <button id="laruButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('../images/cult_geto/Мигель 1.jpg')">
+                <div class="content">
+                    <h2 class="title">Miguel</h2>
+                    <p class="description">Мигель (ミゲル Migeru?) — второстепенный персонаж Jujutsu Kaisen
+                        и антагонист в его приквеле Jujutsu Kaisen 0: Jujutsu High. Первоначально он был одним из
+                        командиров Сугуру Гето, которые хотели, чтобы он стал королем. После Ночного парада сотни демонов
+                        Мигель был насильно завербован Сатору Годзё. Он вернулся на свою родину
+                        в Кению и к тамошнему сообществу магов, чтобы обучать Юту Оккоцу.</p>
+                    <button id="migelButton">Read More</button>
+                </div>
+            </li>
+                    <li class="item" style="background-image:url('../images/cult_geto/Мимико-1.jpg')">
+                <div class="content">
+                    <h2 class="title">Hasaba Mimiko</h2>
+                    <p class="description">Мимико Хасаба (枷はさ場ば美み々み子こ Hasaba Mimiko?) — антагонистка Jujutsu Kaisen
+                        и приквела Jujutsu Kaisen 0: Jujutsu High.
+                        Она была сестрой-близнецом Нанако Хасабы, и они оба были союзниками Сугуру Гето.</p>
+                    <button id="mimikoButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('../images/cult_geto/Нанако 1.jpg')">
+                <div class="content">
+                    <h2 class="title">Hasaba Nanako</h2>
+                    <p class="description">Нанако Хасаба (枷場はさば菜々子ななこ Hasaba Nanako?) — антагонистка Jujutsu Kaisen
+                        и приквела Jujutsu Kaisen 0: Jujutsu High.
+                        Она была сестрой-близнецом Мимико Хасабы, и они оба были союзниками Сугуру Гето.</p>
+                    <button id="nanakoButton">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('../images/cult_geto/Тосихиса Нэги 1.jpeg')">
+                <div class="content">
+                    <h2 class="title">Negi Toshihisa</h2>
+                    <p class="description">Тошихиса Неги (祢木ねぎ利久としひさ Negi Toshihisa?)[1] — персонаж Jujutsu Kaisen
+                        и в его приквеле Jujutsu Kaisen 0: Jujutsu High. Он пользователь
+                        проклятий, который раньше был командиром «семьи» колдунов Сугуру Гето. После смерти Сугуру Неги и
+                        Манами Суда решили выполнить его волю, присоединившись к сущности, которая украла его тело.</p>
+                    <button id="negiButton">Read More</button>
+                </div>
+            </li>
+
+        </ul>
+        <nav class="nav">
+            <div class="dots-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+            <ion-icon class="btn next" name="arrow-forward-outline"></ion-icon>
+        </nav>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js_codes/carousel.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+                const getoButton = document.getElementById('getoButton');
+                const laruButton = document.getElementById('laruButton');
+                const migelButton = document.getElementById('migelButton');
+                const mimikoButton = document.getElementById('mimikoButton');
+                const nanakoButton = document.getElementById('nanakoButton');
+                const negiButton = document.getElementById('negiButton');
+                const sudaButton = document.getElementById('sudaButton');
+
+                function openDescription(url) {
+                    window.open(url, 'sameWindowName');
+                }
+
+                getoButton.addEventListener('click', function () {
+                    openDescription('../heroes_bio/html/cult_geto/geto_description.html');
+                });
+
+                laruButton.addEventListener('click', function () {
+                    openDescription('../heroes_bio/html/cult_geto/laru_description.html');
+                });
+
+                migelButton.addEventListener('click', function () {
+                    openDescription('../heroes_bio/html/cult_geto/migel_description.html');
+                });
+
+                mimikoButton.addEventListener('click', function () {
+                    openDescription('../heroes_bio/html/cult_geto/mimiko_description.html');
+                });
+
+                nanakoButton.addEventListener('click', function () {
+                    openDescription('../heroes_bio/html/cult_geto/nanako_description.html');
+                });
+
+                negiButton.addEventListener('click', function () {
+                    openDescription('../heroes_bio/html/cult_geto/negi_description.html');
+                });
+
+                sudaButton.addEventListener('click', function () {
+                    openDescription('../heroes_bio/html/cult_geto/suda_description.html');
+                });
+            });
+    </script>
+</body>
+</html>

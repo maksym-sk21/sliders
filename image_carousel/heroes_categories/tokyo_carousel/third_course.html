@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="../../style_carousel/carousel_for_3.css">
+    <link rel="stylesheet" href="../../side_bar/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="../../side_bar/sidebar.css">
+</head>
+<body>
+    <main>
+        <div class = "list-group">
+        <nav class="main-menu">
+        <ul>
+            <li>
+                <a class = "list-group-item" href = "../../main_screen/slide.html" >
+                    <i class = "zmdi zmdi-home zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Главная
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-accounts-alt zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Персонажи
+                    </span>
+                </a>
+                <ul>
+                    <li><a href="../kyoto_school.html">Киотская школа</a></li>
+                    <li><a href="../tokyo_school.html">Токийская школа</a></li>
+                    <li><a href="../zenin.html">Семья Зенин</a></li>
+                    <li><a href="../kamo.html">Семья Камо</a></li>
+                    <li><a href="../itadori_family.html">Семья Итадори</a></li>
+                    <li><a href="../cult_geto.html">Культ Гето</a></li>
+                    <li><a href="../cult_kenjaku.html">Культ Кендзяку</a></li>
+                    <li><a href="../dead_game.html">Игроки Смертельной Миграции</a></li>
+                    <li><a href="../curses.html">Проклятья</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-account-box-mail zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Контакты
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-collection-bookmark zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Collection
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a class = "list-group-item" href = "#" >
+                    <i class = "zmdi zmdi-library zmdi-hc-fw"></i>
+                    <span class="nav-text">
+                        Библиотека
+                    </span>
+                </a>
+                <ul>
+                    <li><a href="#">Проклятые техники</a></li>
+                    <li><a href="#">Проклятые предметы</a></li>
+                    <li><a href="#">Сюжетные арки</a></li>
+                    <li><a href="#">Терминология</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+    </div>
+        <ul class="slider">
+            <li class="item" style="background-image:url(../../images/item1.jpg)">
+                <div class="content"></div>
+            </li>
+            <li class="item" style="background-image:url('../../images/AnyConv.com__KinjiHakariVerse2 (1).jpeg')">
+                <div class="content">
+                    <h2 class="title">Hakari Kinji</h2>
+                    <p class="description">Кинджи Хакари (秤はかり金きん次じ Hakari Kinji?) — персонаж серии Магическая Битва.
+                        Он учится на третьем курсе токийской столичной технической школы магии, который в настоящее время
+                        отстранён от занятий за столкновение с властями.
+                        Также Кинджи управляет бойцовским клубом Гачинко, местом проведения рукопашного боя между магами за деньги.</p>
+                    <button id="hakariButton" data-index="0">Read More</button>
+                </div>
+            </li>
+            <li class="item" style="background-image:url('../../images/tumblr_c995d351f24e11a4bc9fa079138fde37_a3a55a6b_540.jpeg')">
+                <div class="content">
+                    <h2 class="title">Hoshi Kirara</h2>
+                    <p class="description">Кирара Хоси (星ほし綺羅羅きらら Хоси Кирара?) — персонаж серии Магическая Битва.
+                        Он учится на третьем курсе токийской столичной технической школы магии,
+                        но в настоящее время не посещает школу из-за отстранения Кинджи Хакари. Кирара помогает Кинджи
+                        управлять Бойцовским клубом Гачинко.</p>
+                    <button id="kiraraButton" data-index="1">Read More</button>
+                </div>
+        </ul>
+        <nav class="nav">
+            <div class="dots-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+            </div>
+            <ion-icon class="btn prev" name="arrow-back-outline"></ion-icon>
+            <ion-icon class="btn next active" name="arrow-forward-outline"></ion-icon>
+        </nav>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../../js_codes/carousel_for_3.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+                const hakariButton = document.getElementById('hakariButton');
+                const kiraraButton = document.getElementById('kiraraButton');
+
+                function openDescription(url) {
+                    window.open(url, 'sameWindowName');
+                }
+
+                hakariButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/third_course/hakari_description.html');
+                });
+
+                kiraraButton.addEventListener('click', function () {
+                    openDescription('../../heroes_bio/html/tokyo_school/third_course/kirara_description.html');
+                });
+            });
+    </script>
+</body>
+</html>
