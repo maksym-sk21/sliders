@@ -74,7 +74,7 @@
         </nav>
     </div>
         <ul class="slider">
-            <li class="item" style="background-image:url('../images/Нишимия Момо 2.jpeg')">
+            <li class="item active" style="background-image:url('../images/Нишимия Момо 2.jpeg')">
                 <div class="content">
                     <h2 class="title">Momo Nishimiya</h2>
                     <p class="description">Нишимия Момо (Momo Nishimiya?) - второстепенный персонаж в Магической битве
@@ -180,7 +180,7 @@
                 const maiButton = document.getElementById('maiButton');
 
                 function openDescription(url) {
-                    window.open(url, 'sameWindowName');
+                    window.location.href = url;
                 }
 
                 mutaButton.addEventListener('click', function () {
