@@ -74,7 +74,7 @@
         </nav>
     </div>
         <ul class="slider">
-            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
+            <li class="item active" style="background-image:url('images/anime-jujutsu_kaisen-megumi_fushiguro-1027748.jpeg')">
                 <div class="content">
                     <h2 class="title">Orimoto Rika</h2>
                     <p class="description">Рика Оримото (祈おり本もと里り香か Orimoto Rika?) — персонаж из Jujutsu Kaisen 0: Jujutsu High, приквела истории. Она подруга детства Юты Оккоцу, которая трагически погибла, когда ее сбила машина. Ее дух был проклят, превратив ее в могущественное мстительное проклятие особого ранга,
@@ -187,7 +187,7 @@
                 const sukunaButton = document.getElementById('sukunaButton');
 
                 function openDescription(url) {
-                    window.open(url, 'sameWindowName');
+                    window.location.href = url;
                 }
 
                 chosoButton.addEventListener('click', function () {
