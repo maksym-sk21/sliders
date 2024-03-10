@@ -74,7 +74,7 @@
         </nav>
     </div>
         <ul class="slider">
-            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-blonde-kento_nanami-1008724.jpeg')">
+            <li class="item active" style="background-image:url('images/anime-jujutsu_kaisen-blonde-kento_nanami-1008724.jpeg')">
                 <div class="content">
                     <h2 class="title">Jiro Awasaka</h2>
                     <p class="description">Дзиро Авасака (粟あわ坂さか 二じ良ろう Awasaka Jirō?) — пользователь проклятий,
@@ -183,7 +183,7 @@
                 const uraumeButton = document.getElementById('uraumeButton');
 
                 function openDescription(url) {
-                    window.open(url, 'sameWindowName');
+                    window.location.href = url;
                 }
 
                 avasakaButton.addEventListener('click', function () {
