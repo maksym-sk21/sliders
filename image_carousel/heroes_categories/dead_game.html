@@ -74,7 +74,7 @@
         </nav>
     </div>
         <ul class="slider">
-            <li class="item" style="background-image:url('images/anime-jujutsu_kaisen-blonde-kento_nanami-1008724.jpeg')">
+            <li class="item active" style="background-image:url('images/anime-jujutsu_kaisen-blonde-kento_nanami-1008724.jpeg')">
                 <div class="content">
                     <h2 class="title">Kashimo Hajime</h2>
                     <p class="description">Хадзиме Касимо (鹿紫雲かしも一はじめ Kashimo Hajime?) известный как Бог Молнии (Райдзин?)
@@ -290,7 +290,7 @@
                 const miyaButton = document.getElementById('miyaButton');
 
                 function openDescription(url) {
-                    window.open(url, 'sameWindowName');
+                    window.location.href = url;
                 }
 
                 halimeButton.addEventListener('click', function () {
