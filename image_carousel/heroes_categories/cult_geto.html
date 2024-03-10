@@ -74,7 +74,7 @@
         </nav>
     </div>
         <ul class="slider">
-            <li class="item" style="background-image:url('../images/cult_geto/Манами Суда 1.jpg')">
+            <li class="item active" style="background-image:url('../images/cult_geto/Манами Суда 1.jpg')">
                 <div class="content">
                     <h2 class="title">Manami Suda</h2>
                     <p class="description">Манами Суда (菅田すだ真奈美まなみ Manami Suda?)[1] — персонаж Jujutsu Kaisen
@@ -172,7 +172,7 @@
                 const sudaButton = document.getElementById('sudaButton');
 
                 function openDescription(url) {
-                    window.open(url, 'sameWindowName');
+                    window.location.href = url;
                 }
 
                 getoButton.addEventListener('click', function () {
