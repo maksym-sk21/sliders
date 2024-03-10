@@ -74,7 +74,7 @@
         </nav>
     </div>
         <ul class="slider">
-            <li class="item" style="background-image:url('../images/zenin/Чодзюро-Зенин-1.jpg')">
+            <li class="item active" style="background-image:url('../images/zenin/Чодзюро-Зенин-1.jpg')">
                 <div class="content">
                     <h2 class="title">Chojuro Zenin</h2>
                     <p class="description">Чодзюро Зенин (禪院ぜんいん長ちょう寿郎じゅろう Zen'in Chōjurō?) — персонаж манги Jujutsu Kaisen.
@@ -160,7 +160,7 @@
                 const rentaButton = document.getElementById('rentaButton');
 
                 function openDescription(url) {
-                    window.open(url, 'sameWindowName');
+                    window.location.href = url;
                 }
 
                 chodzuroButton.addEventListener('click', function () {
