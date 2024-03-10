@@ -74,7 +74,7 @@
         </nav>
     </div>
         <ul class="slider">
-            <li class="item" style="background-image:url('../images/carousel/tokyo_school/anime-jujutsu_kaisen-satoru_gojo-1509915.jpeg')">
+            <li class="item active" style="background-image:url('../images/carousel/tokyo_school/anime-jujutsu_kaisen-satoru_gojo-1509915.jpeg')">
                 <div class="content">
                     <h2 class="title">Семпаи</h2>
                     <p class="description">Lorem ipsum, dolor sit amet consectetur
@@ -133,7 +133,7 @@
                 const sempaiButton = document.getElementById('sempaiButton');
 
                 function openDescription(url) {
-                    window.open(url, 'newWindowName');
+                    window.location.href = url;
                 }
 
                 fgradeButton.addEventListener('click', function () {
