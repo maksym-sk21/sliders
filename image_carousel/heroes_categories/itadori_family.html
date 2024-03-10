@@ -74,7 +74,7 @@
         </nav>
     </div>
         <ul class="slider">
-            <li class="item" style="background-image:url('../images/itadori_fam/jin.jpg')">
+            <li class="item active" style="background-image:url('../images/itadori_fam/jin.jpg')">
                 <div class="content">
                     <h2 class="title">Itadori Jin</h2>
                     <p class="description">Итадори Дзин (虎杖悠仁いたどりゆうじ Itadori Jin?) — второстепенный персонаж Магической Битвы.
@@ -120,7 +120,7 @@
                 const kaoriButton = document.getElementById('kaoriButton');
 
                 function openDescription(url) {
-                    window.open(url, 'sameWindowName');
+                    window.location.href = url;
                 }
 
                 dzinButton.addEventListener('click', function () {
