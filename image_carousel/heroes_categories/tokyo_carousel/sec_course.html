@@ -74,7 +74,7 @@
         </nav>
     </div>
         <ul class="slider">
-            <li class="item" style="background-image:url('../../images/Maki-Zenin-1.jpeg')">
+            <li class="item active" style="background-image:url('../../images/Maki-Zenin-1.jpeg')">
                 <div class="content">
                     <h2 class="title">Maki Zenin</h2>
                     <p class="description">Маки Зенин — главный персонаж из приквела "Токийская столичная
@@ -133,7 +133,7 @@
                 const yutaButton = document.getElementById('yutaButton');
 
                 function openDescription(url) {
-                    window.open(url, 'sameWindowName');
+                    window.location.href = url;
                 }
 
                 makiButton.addEventListener('click', function () {
