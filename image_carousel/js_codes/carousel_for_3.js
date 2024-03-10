@@ -18,6 +18,8 @@ function activate(e) {
         document.querySelector('.prev').classList.remove('active');
         document.querySelector('.next').classList.add('active');
     }
+
+    updateHash();
 }
 
 function updateDots(newIndex) {
@@ -33,5 +35,23 @@ function updateDots(newIndex) {
         dot.classList.toggle('active', index === newIndex);
     });
 }
+
+document.addEventListener('click', activate, false);
+
+function updateHash() {
+    const activeSlideIndex = Array.from(dots).findIndex(dot => dot.classList.contains('active'));
+    window.location.hash = `#${activeSlideIndex}`;
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+    let requestedSlideIndex = parseInt(window.location.hash.slice(1));
+
+    if (isNaN(requestedSlideIndex)) {
+        requestedSlideIndex = 0;
+        window.location.hash = '#0';
+    }
+
+    updateDots(requestedSlideIndex);
+});
 
 document.addEventListener('click', activate, false);
