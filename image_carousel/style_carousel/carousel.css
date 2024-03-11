@@ -201,14 +201,23 @@ main {
 }
 
 @media (max-width: 650px) {
+  .btn.prev,
+    .btn.next {
+        display: none;
+    }
+
   html {
     overflow: hidden;
   }
   .content {
-    left: 7%;
-    & .title        { font-size: 0.9rem; }
-    & .description  { font-size: 0.65rem; }
-    & button        { font-size: 0.7rem; }
+  position: absolute;
+  top: 40em;
+    left: 20%;
+    width: 65%;
+    height:auto;
+    & .title        { font-size: 0.9rem; margin-bottom: 0.1rem;}
+    & .description  { font-size: 0.65rem; margin-bottom: 0.1rem;}
+    & button        { font-size: 0.7rem; margin-bottom: 0.1rem;}
   }
   .item {
     width: 130px;
