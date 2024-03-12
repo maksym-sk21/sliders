@@ -232,7 +232,7 @@ main {
   .dots-container {
   position: fixed;
 
-    bottom: 27px;
+    bottom: 30px;
     left: 50%;
   transform: translateX(-50%);
   display: flex;
